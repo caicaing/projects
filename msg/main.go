@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/caicaing/send_msg/task"
-	"github.com/caicaing/send_msg/task/imp"
+	"github.com/caicaing/projects/msg/task"
+	"github.com/caicaing/projects/msg/task/imp"
 )
 
 func main() {

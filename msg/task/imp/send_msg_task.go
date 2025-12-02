@@ -2,7 +2,7 @@ package imp
 
 import (
 	"fmt"
-	"github.com/caicaing/send_msg/api"
+	"github.com/caicaing/projects/msg/api"
 	"time"
 )
 

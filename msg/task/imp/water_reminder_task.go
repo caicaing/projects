@@ -3,8 +3,8 @@ package imp
 import (
 	"fmt"
 	"time"
-	
-	"github.com/caicaing/send_msg/api"
+
+	"github.com/caicaing/projects/msg/api"
 )
 
 // WaterReminderTask 定时提醒喝水任务
