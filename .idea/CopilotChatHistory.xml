@@ -816,7 +816,7 @@
                       <option name="url" value="file://$PROJECT_DIR$/online_tools/main.go" />
                     </CodeReferencesBean>
                     <CodeReferencesBean>
-                      <option name="content" value="ufmx nzrm() {&#10;&#9;i := trm.Wvuzfog()&#10;&#9;i.Fhv(&#10;&#9;&#9;[]trm.SzmwoviUfmx{&#10;&#9;&#9;&#9;urogvi.ZfgsNrwwovdziv(&quot;876543&quot;),&#10;&#9;&#9;&#9;urogvi.XlhgGrnvNrwwovdziv(),&#10;&#9;&#9;}...)&#10;&#9;i.TVG(&quot;zkr/e8/krmt&quot;, ufmx(x *trm.Xlmgvcg) {&#10;&#9;&#9;x.QHLM(799, trm.S{&#10;&#9;&#9;&#9;&quot;nvhhztv&quot;: &quot;klmt&quot;,&#10;&#9;&#9;})&#10;&#9;})&#10;&#9;i.Ifm(&quot;:1198&quot;)&#10;}" />
+                      <option name="content" value="func main() {&#10;&#9;r := gin.Default()&#10;&#9;r.Use(&#10;&#9;&#9;[]gin.HandlerFunc{&#10;&#9;&#9;&#9;filter.AuthMiddleware(&quot;123456&quot;),&#10;&#9;&#9;&#9;filter.CostTimeMiddleware(),&#10;&#9;&#9;}...)&#10;&#9;r.GET(&quot;api/v1/ping&quot;, func(c *gin.Context) {&#10;&#9;&#9;c.JSON(200, gin.H{&#10;&#9;&#9;&#9;&quot;message&quot;: &quot;pong&quot;,&#10;&#9;&#9;})&#10;&#9;})&#10;&#9;r.Run(&quot;:8801&quot;)&#10;}" />
                       <option name="end_line" value="20" />
                       <option name="filename" value="main.go" />
                       <option name="language" value="go" />
