@@ -1,9 +1,9 @@
 <script setup>
-import Login from './components/Login.vue'
+// 路由视图会自动根据路由配置显示对应的组件
 </script>
 
 <template>
-  <Login />
+  <router-view />
 </template>
 
 <style>
@@ -13,12 +13,16 @@ import Login from './components/Login.vue'
   box-sizing: border-box;
 }
 
-body {
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 #app {
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
 }
 </style>
