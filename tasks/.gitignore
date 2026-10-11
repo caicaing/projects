@@ -1,0 +1,13 @@
+/data/
+/bin/
+/backend/bin/
+/backend/data/
+/backend/examples/consumer/data/
+/examples/consumer/data/
+/frontend/node_modules/
+*.log
+/.taskflow-deploy/
+/.taskflow-deploy.tmp.*/
+/conf.yaml
+/backend/conf.yaml
+/frontend/conf.yaml

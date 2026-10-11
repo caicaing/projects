@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>登录 · Taskflow</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/login.js"></script>
+</head>
+<body class="login-page">
+  <main class="login-card">
+    <div class="dialog-header">
+      <div><span class="eyebrow">TASKFLOW</span><h1>登录管理台</h1></div>
+    </div>
+    <form id="login-form">
+      <p class="muted">使用管理员账号登录，管理任务与通知渠道。</p>
+      <label>账号<input name="username" autocomplete="username"
+        required maxlength="128" autofocus></label>
+      <label>密码<input name="password" type="password"
+        autocomplete="current-password" required maxlength="1024"></label>
+      <p class="form-error" id="login-error" role="alert"></p>
+      <button class="button primary" id="login-button">登录</button>
+    </form>
+  </main>
+</body>
+</html>

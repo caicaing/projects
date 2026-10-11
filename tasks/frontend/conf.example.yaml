@@ -1,0 +1,13 @@
+# Node 网关独立配置，不会下发浏览器；直接填写值，修改后重启。
+web:
+  host: "127.0.0.1"
+  port: 8080
+  origin: "http://127.0.0.1:8080"
+  username: "admin"
+  # 管理台登录密码，12–1024 字符。
+  password: ""
+
+backend:
+  url: "http://127.0.0.1:8081"
+  # 与 backend/conf.yaml 的 backend.token 保持一致。
+  token: ""

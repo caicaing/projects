@@ -1,0 +1,112 @@
+dialog {
+  border: 1px solid #dce5d8; border-radius: 13px; color: var(--ink);
+  background: white; padding: 0; box-shadow: 0 24px 80px #10271c30;
+  width: min(720px, calc(100vw - 36px)); max-height: 90vh;
+}
+dialog::backdrop { background: #102d2a65; backdrop-filter: blur(3px); }
+.dialog-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 23px 26px; border-bottom: 1px solid var(--line);
+}
+.dialog-header h2 { margin-top: 3px; font-size: 21px; }
+#editor-fields { padding: 23px 26px 0; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
+.full { grid-column: 1 / -1; }
+label { display: block; font-size: 12px; color: #5c7060; font-weight: 500; }
+input, select, textarea {
+  width: 100%; margin-top: 6px; background: #fcfdfb; color: #374e3f;
+  border: 1px solid #dfe7da; border-radius: 5px; outline: 0;
+  padding: 9px 11px; font-size: 12px;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #92b77b; box-shadow: 0 0 0 3px #b9ce9926;
+}
+textarea { resize: vertical; min-height: 155px; line-height: 1.7; }
+textarea.json-editor {
+  font: 12px/1.7 ui-monospace, SFMono-Regular, Consolas, monospace;
+  background: #f7f9f4;
+}
+.field-hint { font-size: 10px; color: #96a38e; margin-top: 5px; }
+.field-description { color: #829578; font-size: 11px; margin: 7px 0; }
+.field-header {
+  display: flex; align-items: center; justify-content: space-between;
+}
+.field-header label { font-weight: 500; }
+.checkbox-label {
+  display: flex; align-items: center; gap: 8px; font-weight: 400;
+  padding: 9px 0;
+}
+input[type="checkbox"] {
+  width: 14px; height: 14px; padding: 0; margin: 0; accent-color: #6b9652;
+}
+.channel-options { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.form-section-title {
+  margin: 22px 0 14px; padding-top: 17px;
+  border-top: 1px solid var(--line); color: #7c906d;
+  font-size: 11px; font-weight: 600;
+}
+.dialog-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  border-top: 1px solid var(--line); padding: 17px 26px; margin-top: 18px;
+}
+.dialog-footer > span { font-size: 10px; color: #9aa78f; }
+.dialog-footer > div { display: flex; gap: 10px; }
+.form-error {
+  color: #b56e59; font-size: 12px; margin: 15px 26px 0;
+  white-space: pre-wrap;
+}
+.form-error:empty { display: none; }
+#detail-body { padding: 22px 26px 26px; }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.detail-grid dt { color: #96a38f; font-size: 10px; }
+.detail-grid dd { margin: 4px 0 0; font-size: 12px; overflow-wrap: anywhere; }
+.output-label { margin: 20px 0 8px; color: #81956f; font-size: 11px; }
+.output {
+  background: #f5f8f1; border: 1px solid #e5ebdd; border-radius: 6px;
+  padding: 15px; white-space: pre-wrap; overflow-wrap: anywhere;
+  font: 11px/1.8 ui-monospace, SFMono-Regular, Consolas, monospace;
+  max-height: 280px; overflow: auto;
+}
+.output.error { color: #b07157; background: #fcf6f1; }
+.delivery {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 12px;
+}
+.delivery-error { color: #b07157; font-size: 11px; overflow-wrap: anywhere; }
+#toast {
+  position: fixed; bottom: 27px; left: calc(50% + 90px); z-index: 10;
+  transform: translateX(-50%); border-radius: 7px; background: #234838;
+  box-shadow: 0 5px 20px #17362720; color: #f4faed;
+  padding: 11px 20px; font-size: 12px; max-width: 85vw; display: none;
+}
+#toast.visible { display: block; }
+#toast.error { background: #9b6150; }
+.preview-times { font-size: 11px; color: #708860; line-height: 1.9; }
+.weekday-picker { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.weekday-option {
+  display: flex; align-items: center; gap: 6px; padding: 8px 10px;
+  border: 1px solid #dfe7da; border-radius: 5px;
+}
+.weekday-option:has(input:checked) {
+  background: #eff6e7; border-color: #a8c68f; color: #4b733c;
+}
+@media (max-width: 550px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .dialog-header, #editor-fields, #detail-body { padding-inline: 19px; }
+  .dialog-footer { padding-inline: 19px; }
+  .dialog-footer > span { display: none; }
+  .dialog-footer > div { margin-left: auto; }
+  #toast { left: 50%; }
+}
+
+.login-page {
+  min-height: 100vh; display: grid; place-items: center; padding: 24px;
+}
+.login-card {
+  width: min(450px, 100%); background: white; border: 1px solid var(--line);
+  border-radius: 18px; box-shadow: 0 18px 60px #142e3012;
+}
+#login-form { padding: 20px 26px 26px; }
+#login-form label { margin-top: 17px; }
+#login-form .button { width: 100%; margin-top: 20px; }
+#login-form .form-error { margin: 12px 0 0; }

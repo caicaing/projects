@@ -1,0 +1,5 @@
+# Replace with the same domain as .taskflow-deploy/frontend.yaml web.origin.
+taskflow.example.com {
+    header Strict-Transport-Security "max-age=31536000"
+    reverse_proxy 127.0.0.1:8080
+}
