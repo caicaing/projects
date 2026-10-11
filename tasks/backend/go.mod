@@ -3,7 +3,7 @@ module github.com/caicaing/projects/tasks/backend
 go 1.23
 
 require (
-	github.com/caicaing/projects/tasks/framework v0.0.0
+	github.com/caicaing/projects/tasks/framework v0.1.0
 	go.yaml.in/yaml/v3 v3.0.5
 	modernc.org/sqlite v1.34.5
 )
@@ -19,5 +19,3 @@ require (
 	modernc.org/mathutil v1.6.0 // indirect
 	modernc.org/memory v1.8.0 // indirect
 )
-
-replace github.com/caicaing/projects/tasks/framework => ../framework
