@@ -6,7 +6,7 @@ import (
 	"errors"
 	"time"
 
-	"git.woa.com/mooyliu/mooy_test/framework/internal/model"
+	"github.com/caicaing/projects/tasks/framework/internal/model"
 )
 
 var (

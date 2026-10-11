@@ -1,7 +1,7 @@
-module taskflow-consumer
+module github.com/caicaing/projects/tasks/examples/consumer
 
 go 1.23
 
-require git.woa.com/mooyliu/mooy_test/framework v0.0.0
+require github.com/caicaing/projects/tasks/framework v0.0.0
 
-replace git.woa.com/mooyliu/mooy_test/framework => ../../framework
+replace github.com/caicaing/projects/tasks/framework => ../../framework

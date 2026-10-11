@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"sync"
 
-	taskflow "git.woa.com/mooyliu/mooy_test/framework"
+	taskflow "github.com/caicaing/projects/tasks/framework"
 
 	_ "modernc.org/sqlite"
 )

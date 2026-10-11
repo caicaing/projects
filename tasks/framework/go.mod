@@ -1,3 +1,3 @@
-module git.woa.com/mooyliu/mooy_test/framework
+module github.com/caicaing/projects/tasks/framework
 
 go 1.23

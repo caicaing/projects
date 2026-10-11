@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"git.woa.com/mooyliu/mooy_test/framework"
+	"github.com/caicaing/projects/tasks/framework"
 )
 
 func (s *server) previewSchedule(w http.ResponseWriter, r *http.Request) {

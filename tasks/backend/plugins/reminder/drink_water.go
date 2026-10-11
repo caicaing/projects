@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"git.woa.com/mooyliu/mooy_test/framework"
+	"github.com/caicaing/projects/tasks/framework"
 )
 
 const defaultDrinkWaterMessage = "该喝水啦，休息一下，喝杯水吧。"

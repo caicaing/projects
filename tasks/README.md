@@ -263,8 +263,8 @@ func registerPlugins(r *taskflow.Registry) error {
 package main
 
 import (
-    "git.woa.com/mooyliu/mooy_test/backend/plugins/demo"
-    "git.woa.com/mooyliu/mooy_test/framework"
+    "github.com/caicaing/projects/tasks/backend/plugins/demo"
+    "github.com/caicaing/projects/tasks/framework"
 )
 
 func registerPlugins(r *taskflow.Registry) error {

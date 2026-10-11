@@ -1,6 +1,6 @@
 # Taskflow 框架
 
-独立 Go 模块 `git.woa.com/mooyliu/mooy_test/framework`，包名 `taskflow`。
+独立 Go 模块 `github.com/caicaing/projects/tasks/framework`，包名 `taskflow`。
 只依赖标准库，提供任务/通知注册、时间计划、调度、执行、重试、取消和结果。
 不包含管理 API、登录、配置文件解析、数据库驱动或具体业务插件。
 
@@ -10,8 +10,8 @@
 import (
     "context"
 
-    "git.woa.com/mooyliu/mooy_test/framework"
-    "git.woa.com/mooyliu/mooy_test/framework/storage/memory"
+    "github.com/caicaing/projects/tasks/framework"
+    "github.com/caicaing/projects/tasks/framework/storage/memory"
 )
 
 engine, err := taskflow.New(ctx, taskflow.Options{
@@ -85,4 +85,4 @@ Options 零值使用默认参数：8 个 worker、500 条历史、1 秒轮询、
 只支持单实例调度；同一 Store 只能给一个 Engine 使用。
 插件源码在使用方仓库维护，发布框架不需要带上管理台和业务插件。
 框架模块发布使用 `framework/vX.Y.Z` tag；私有仓库下载需 Git 读取权限，
-并配置 GOPRIVATE=git.woa.com。当前示例通过 replace 使用本地模块。
+并配置 GOPRIVATE=github.com/caicaing/projects。当前示例通过 replace 使用本地模块。

@@ -3,7 +3,7 @@ package schedule
 import (
 	"fmt"
 
-	"git.woa.com/mooyliu/mooy_test/framework/internal/model"
+	"github.com/caicaing/projects/tasks/framework/internal/model"
 	"strconv"
 	"strings"
 	"time"

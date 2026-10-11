@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"sync"
 
-	"git.woa.com/mooyliu/mooy_test/framework"
+	"github.com/caicaing/projects/tasks/framework"
 )
 
 // Store retains state in memory; there are no resources to close.

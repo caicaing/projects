@@ -16,7 +16,7 @@ go run .
 正式发布后可以移除 replace，通过仓库访问凭据下载：
 
 ```sh
-GOPRIVATE=git.woa.com go get git.woa.com/mooyliu/mooy_test/framework@latest
+GOPRIVATE=github.com/caicaing/projects go get github.com/caicaing/projects/tasks/framework@latest
 ```
 
 业务插件放在本项目 plugins.go，配置和数据库也由使用方自行管理。

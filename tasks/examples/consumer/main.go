@@ -10,8 +10,8 @@ import (
 	"syscall"
 	"time"
 
-	"git.woa.com/mooyliu/mooy_test/framework"
-	"git.woa.com/mooyliu/mooy_test/framework/storage/memory"
+	"github.com/caicaing/projects/tasks/framework"
+	"github.com/caicaing/projects/tasks/framework/storage/memory"
 )
 
 func main() {

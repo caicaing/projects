@@ -1,10 +1,10 @@
 package main
 
 import (
-	"git.woa.com/mooyliu/mooy_test/backend/plugins/bark"
-	"git.woa.com/mooyliu/mooy_test/backend/plugins/builtin"
-	"git.woa.com/mooyliu/mooy_test/backend/plugins/reminder"
-	"git.woa.com/mooyliu/mooy_test/framework"
+	"github.com/caicaing/projects/tasks/backend/plugins/bark"
+	"github.com/caicaing/projects/tasks/backend/plugins/builtin"
+	"github.com/caicaing/projects/tasks/backend/plugins/reminder"
+	"github.com/caicaing/projects/tasks/framework"
 )
 
 // Register constructors with r.Tasks.Register and r.Notifiers.Register.

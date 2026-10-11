@@ -1,9 +1,9 @@
-module git.woa.com/mooyliu/mooy_test/backend
+module github.com/caicaing/projects/tasks/backend
 
 go 1.23
 
 require (
-	git.woa.com/mooyliu/mooy_test/framework v0.0.0
+	github.com/caicaing/projects/tasks/framework v0.0.0
 	go.yaml.in/yaml/v3 v3.0.5
 	modernc.org/sqlite v1.34.5
 )
@@ -20,4 +20,4 @@ require (
 	modernc.org/memory v1.8.0 // indirect
 )
 
-replace git.woa.com/mooyliu/mooy_test/framework => ../framework
+replace github.com/caicaing/projects/tasks/framework => ../framework

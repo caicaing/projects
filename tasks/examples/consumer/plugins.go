@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log/slog"
 
-	"git.woa.com/mooyliu/mooy_test/framework"
+	"github.com/caicaing/projects/tasks/framework"
 )
 
 type sumConfig struct {

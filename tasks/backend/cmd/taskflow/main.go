@@ -12,10 +12,10 @@ import (
 	"syscall"
 	"time"
 
-	"git.woa.com/mooyliu/mooy_test/backend/api"
-	"git.woa.com/mooyliu/mooy_test/backend/config"
-	"git.woa.com/mooyliu/mooy_test/backend/storage/sqlite"
-	taskflow "git.woa.com/mooyliu/mooy_test/framework"
+	"github.com/caicaing/projects/tasks/backend/api"
+	"github.com/caicaing/projects/tasks/backend/config"
+	"github.com/caicaing/projects/tasks/backend/storage/sqlite"
+	taskflow "github.com/caicaing/projects/tasks/framework"
 )
 
 func main() {
