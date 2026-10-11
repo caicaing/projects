@@ -20,6 +20,7 @@ build:
 backend: backend/conf.yaml
 	cd backend && go run ./cmd/taskflow
 
+
 frontend: frontend/conf.yaml frontend/node_modules/.package-lock.json
 	cd frontend && npm run dev
 
